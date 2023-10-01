@@ -1,3 +1,10 @@
 {
-    "token": "RedMaster"
+    "tokens": [
+        {
+            "token": "1234567890",
+            "info":{
+            "date": "12-12-2023",
+            "hours": "12-56"}
+        }
+    ]
 }
