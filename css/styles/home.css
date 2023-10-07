@@ -36,7 +36,9 @@
 
 .menuConteiner {
     grid-area: menu;
-    top: 80vh;
+    top: 83vh;
+    width:100vw;
+    position: fixed;
     height: 10vh;
     display: flex;
     justify-content: space-evenly;
