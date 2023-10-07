@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <div class="homeContainer">
+        <div class="navConteiner">
+            <div class="navInput">
+                <input type="text" placeholder="pesquisar">
+                <img src="./css/imgs/lupa.svg" alt="">
+            </div>
+            <div class="navPerfil">
+                <img src="./css/imgs/logo.jpg" alt="">
+            </div>
+        </div>
+        <div class="mainContainer">
+
+        </div>
+        <div class="menuConteiner">
+            <div class="menuItem">
+                <img src="./css/imgs/home.svg" alt="">
+                <p>Home</p>
+            </div>
+
+            <div class="menuItem">
+                <img src="./css/imgs/value.svg" alt="">
+                <p>Cashback</p>
+            </div>
+
+            <div class="menuItem">
+                <img src="./css/imgs/key.svg" alt="">
+                <p>Token</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    class Home {
+        constructor(cardNumber) {
+            const mainContainer = document.querySelector(".mainContainer");
+
+            const card = document.createElement('div');
+            card.classList.add(`card${cardNumber}`, 'mainCard');
+
+            card.innerHTML = `
+            <div class="mainCardImg">
+                <img src="./css/imgs/logo502.png" alt="">
+            </div>
+            <div class="mainCardEndereco">
+                <div class="mainCardEnderecoTitle">
+                    <h1>Endereço</h1>
+                </div>
+                <div class="mainCardEnderecoText">
+                    <p>Rua: Generoso...</p>
+                    <p>Número: 288</p>
+                    <p>Bairro: São Bento</p>
+                    <p>Cidade: Sidrolândia</p>
+                    <p>Estado: MS</p>
+                </div>
+            </div>
+            <div class="mainCardCashBack">
+                <div class="p">17%</div>
+            </div>`;
+
+            mainContainer.appendChild(card);
+        }
+    }
+
+    for (let i = 0; i < 10; i++) {
+        new Home(i);
+    }
+    // Adicione mais instâncias de cartões conforme necessário
+
+</script>
+
+</html>
