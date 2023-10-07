@@ -26,7 +26,7 @@
     width: 100vw;
     overflow-x: hidden;
     display: flex;
-    gap: 5px;
+    gap: 10px;
     justify-content: center;
     flex-wrap: wrap;
     overflow-y: scroll;
@@ -115,7 +115,7 @@
 
 .mainCard {
     position: relative;
-    top: 20%;
+    top: 30px;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 98%;
