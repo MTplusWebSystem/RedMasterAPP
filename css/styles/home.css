@@ -136,11 +136,11 @@
         top: 57%;
     }
     .mainContainer {
-        top: 15vh;
-        height: 85vh;
+        top: 12vh;
+        height: 82vh;
     }
     .menuConteiner{
-        top: 85vh;
+        top: 83vh;
     }
 }
 @media screen and (min-height: 520px) {
@@ -151,11 +151,11 @@
         top: 50%;
     }
     .mainContainer {
-        top: 12.5vh;
-        height: 87.5vh;
+        top: 10.5vh;
+        height: 83.5vh;
     }
     .menuConteiner{
-        top: 87.5vh;
+        top: 83.5vh;
     }
 }
 .mainCardImg {
