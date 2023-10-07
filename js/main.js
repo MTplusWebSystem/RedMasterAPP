@@ -162,4 +162,17 @@ class Home {
   Cards (value) {
     return value
   }
+  activePerfil(selector) {
+    const element = document.querySelector(selector);
+    element.addEventListener('click', () => {
+      const perfil = document.querySelector('.perfil');
+      const fundo = document.querySelector('.fundo');
+      perfil.style.display = 'flex';
+      fundo.style.display = 'flex';
+      fundo.addEventListener('click', () => {
+        perfil.style.display = 'none';
+        fundo.style.display = 'none';
+      });
+    });
+  }
 }
