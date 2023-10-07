@@ -130,7 +130,7 @@
 }
 @media screen and (max-height: 519px) {
     .mainCard {
-        height: 20%;
+        height: 33%;
     }
     .mainCardEnderecoText{
         top: 57%;
