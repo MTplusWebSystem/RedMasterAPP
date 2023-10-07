@@ -26,7 +26,7 @@
     width: 100vw;
     overflow-x: hidden;
     display: flex;
-    gap: 40px;
+    gap: 5px;
     justify-content: center;
     flex-wrap: wrap;
     overflow-y: scroll;
