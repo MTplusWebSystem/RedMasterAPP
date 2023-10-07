@@ -145,13 +145,13 @@
 }
 @media screen and (min-height: 520px) {
     .mainCard {
-        height: 25%;
+        height: 20%;
     }
     .mainCardEnderecoText{
         top: 50%;
     }
     .mainContainer {
-        top: 8.5vh;
+        top: 9.5vh;
         height: 83.5vh;
     }
     .menuConteiner{
