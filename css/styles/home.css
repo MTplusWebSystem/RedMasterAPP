@@ -22,7 +22,7 @@
     background-color: blue;
     position: fixed;
     top: 10vh;
-    height: 75vh;
+    height: 80vh;
     width: 100vw;
     overflow-x: hidden;
     display: flex;
@@ -36,8 +36,8 @@
 
 .menuConteiner {
     grid-area: menu;
-    height: 15vh;
-    top: 80vh;
+    top: 90vh;
+    height: 10vh;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
