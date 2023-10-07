@@ -130,9 +130,36 @@ class Status {
 }
 
 
-class Validate {
-  constructor() {
+class Home {
+  constructor(cardNumber) {
+      const mainContainer = document.querySelector(".mainContainer");
+
+      const card = document.createElement('div');
+      card.classList.add(`card${cardNumber}`, 'mainCard');
+
+      card.innerHTML = `
+      <div class="mainCardImg">
+          <img src="./css/imgs/logo502.png" alt="">
+      </div>
+      <div class="mainCardEndereco">
+          <div class="mainCardEnderecoTitle">
+              <h1>Endereço</h1>
+          </div>
+          <div class="mainCardEnderecoText">
+              <p>Rua: Generoso...</p>
+              <p>Número: 288</p>
+              <p>Bairro: São Bento</p>
+              <p>Cidade: Sidrolândia</p>
+              <p>Estado: MS</p>
+          </div>
+      </div>
+      <div class="mainCardCashBack">
+          <div class="p">17%</div>
+      </div>`;
+
+      mainContainer.appendChild(card);
   }
-  User(infoUser, InfoPassword) {
+  Cards (value) {
+    return value
   }
 }

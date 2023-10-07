@@ -36,7 +36,7 @@
 
 .menuConteiner {
     grid-area: menu;
-    top: 83vh;
+    top: 84vh;
     width:100vw;
     position: fixed;
     height: 10vh;
@@ -216,4 +216,19 @@
     background-color: green;
     border-radius: 10px;
 }
-
+.perfil {
+    width: 70%;
+    height: 100vh; 
+    left: 30%;
+    top: 0;
+    position: fixed;
+    z-index: 333;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    border-top-left-radius: 10px; 
+    border-bottom-left-radius: 10px;
+}

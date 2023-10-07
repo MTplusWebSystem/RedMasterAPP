@@ -6,6 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>home</title>
     <link rel="stylesheet" href="./css/main.css">
+    <style>
+        .cardName {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 10px;
+            margin: 10px 0;
+        }
+        .cardName img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        .fotoPerfil {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .fotoPerfil img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+        .cardSaldo {
+            padding: 0 10px;
+            margin: 10px 0;
+        }
+        .cardToken {
+            padding: 0 10px;
+            margin: 10px 0;
+        }
+        .dadosPessoal, .sobre, .sair {
+            padding: 0 10px;
+            margin: 10px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+        }
+        .dadosPessoal button, .sobre button, .sair button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #fff;
+            margin: 5px 0;
+        }
+    </style>
 </head>
 
 <body>
@@ -39,43 +90,44 @@
             </div>
         </div>
     </div>
+   
+    <div class="perfil">
+        <div class="cardName">
+            <p>Fabricio O. Sampaio </p>
+            <div class="fotoPerfil">
+                <img src="./css/imgs/logo.jpg" alt="">
+            </div>
+        </div>
+        <div class="cardSaldo">
+            <p>Saldo: R$ 0,00</p>
+        </div>
+        <div class="cardToken">
+            <p>Token: 0</p>
+        </div>
+        <div class="dadosPessoal">
+            <p>Dados pessoais</p>
+            <button>Ver dados</button>
+            <button>Editar dados</button>
+        </div>
+        <div class="sobre">
+            <p>Sobre</p>
+            <button>Termos</button>
+            <button>Contrato de serviço</button>
+        </div>
+        <div class="sair">
+            <button>Sair</button>
+        </div>
+    </div>
 </body>
+
+<script src="./js/main.js"></script>
 <script>
-    class Home {
-        constructor(cardNumber) {
-            const mainContainer = document.querySelector(".mainContainer");
+   const home = new Home();
+   const valor = home.Cards(15);
 
-            const card = document.createElement('div');
-            card.classList.add(`card${cardNumber}`, 'mainCard');
-
-            card.innerHTML = `
-            <div class="mainCardImg">
-                <img src="./css/imgs/logo502.png" alt="">
-            </div>
-            <div class="mainCardEndereco">
-                <div class="mainCardEnderecoTitle">
-                    <h1>Endereço</h1>
-                </div>
-                <div class="mainCardEnderecoText">
-                    <p>Rua: Generoso...</p>
-                    <p>Número: 288</p>
-                    <p>Bairro: São Bento</p>
-                    <p>Cidade: Sidrolândia</p>
-                    <p>Estado: MS</p>
-                </div>
-            </div>
-            <div class="mainCardCashBack">
-                <div class="p">17%</div>
-            </div>`;
-
-            mainContainer.appendChild(card);
-        }
-    }
-
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < valor; i++) {
         new Home(i);
     }
-    // Adicione mais instâncias de cartões conforme necessário
 
 </script>
 
