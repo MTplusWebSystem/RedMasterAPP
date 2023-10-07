@@ -136,11 +136,11 @@
         top: 57%;
     }
     .mainContainer {
-        top: 13.5vh;
+        top: 14.5vh;
         height: 82vh;
     }
     .menuConteiner{
-        top: 85vh;
+        top: 86vh;
     }
 }
 @media screen and (min-height: 520px) {
