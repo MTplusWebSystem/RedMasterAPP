@@ -1,0 +1,35 @@
+            </<Stack.Screen 
+            name="Login" 
+            component={Login}
+            options={{ headerShown : false}}
+             />
+             <Stack.Screen 
+            name="Register" 
+            component={Register}
+            options={{ headerShown : false}}
+             />
+             <Stack.Screen 
+            name="RegisterAss" 
+            component={RegisterAss}
+            options={{ headerShown : false}}
+             />
+            <Stack.Screen 
+            name="ClientBar" 
+            component={ClientBar}
+            options={{ headerShown : false}}
+             />
+            <Stack.Screen
+                name="CompanyBar" 
+                component={CompanyBar}
+                options={{ headerShown : false}}
+                />
+
+
+                <TextInput style={styles.input} placeholder="Nome de usuário" />
+        <TextInput style={styles.input} placeholder="Email" />
+        <TextInput style={styles.input} placeholder="Senha" secureTextEntry />
+        <TextInput
+          style={styles.input}
+          placeholder="Confirmar Senha"
+          secureTextEntry
+        />
