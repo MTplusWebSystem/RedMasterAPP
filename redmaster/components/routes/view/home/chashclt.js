@@ -1,10 +1,12 @@
 import React from "react";
+import { useNavigation } from "@react-navigation/native";
 import { Feather } from '@expo/vector-icons';
 import { Text, View, StyleSheet, TextInput, Image,TouchableOpacity } from "react-native";
 
 
 
 const CashBackMenu = () => {
+  const navigation = useNavigation();
     return (
         <View style={styles.container}>
             <View style={styles.search}>
@@ -31,7 +33,9 @@ const CashBackMenu = () => {
 
             <View style={styles.CashBackMenu}>
                <View style={styles.styleMenu}>
-                  <TouchableOpacity style={styles.styleButton}>
+                  <TouchableOpacity style={styles.styleButton}
+                  onPress={( ) => navigation.navigate('Extratoctl')}
+                  >
                   <Feather name="dollar-sign" size={45}  color={"#047AF9"} /> 
                     <Text style={styles.styleText}>
                       Extrato

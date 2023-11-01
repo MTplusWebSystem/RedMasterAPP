@@ -4,6 +4,7 @@ import  View from "./view/index";
 import  Company from "./view/company";
 import  Client from "./view/clinet";
 import  Define from "./view/difine";
+import  Extraclt from "./view/home/extratoclt"
 import  ResClient from "./view/register/resclient1";
 import  ResCompany from "./view/register/rescompany1";
 import  Homebar from "./routerClient";
@@ -38,6 +39,11 @@ export default function Router() {
             <Stack.Screen
              name="ResClient" 
              component={ResClient} 
+             options={{ headerShown : false}}
+            />
+            <Stack.Screen
+             name="Extratoctl" 
+             component={Extraclt} 
              options={{ headerShown : false}}
             />
             <Stack.Screen
