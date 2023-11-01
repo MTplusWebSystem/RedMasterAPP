@@ -13,8 +13,7 @@ const generateCards = () => {
     const percentage = generateRandomPercentage();
     return (
       <View key={index} style={styles.card}>
-      <View style={styles.value1}>
-        
+      <View style={styles.value1}> 
       <Image source={{ uri: 'https://i.imgur.com/uBtfRHK.png/80x80' }} style={styles.company} />
       </View>
       <View style={styles.value2}>

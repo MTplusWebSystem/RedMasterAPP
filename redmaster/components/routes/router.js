@@ -4,10 +4,10 @@ import  View from "./view/index";
 import  Company from "./view/company";
 import  Client from "./view/clinet";
 import  Define from "./view/difine";
-import  Extraclt from "./view/home/extratoclt"
 import  ResClient from "./view/register/resclient1";
 import  ResCompany from "./view/register/rescompany1";
 import  Homebar from "./routerClient";
+import Extratoclt from "./view/home/extratoclt";
 
 
 const Stack = createNativeStackNavigator();
@@ -43,7 +43,7 @@ export default function Router() {
             />
             <Stack.Screen
              name="Extratoctl" 
-             component={Extraclt} 
+             component={Extratoclt} 
              options={{ headerShown : false}}
             />
             <Stack.Screen
